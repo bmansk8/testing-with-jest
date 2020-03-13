@@ -1,0 +1,44 @@
+#quote-box {
+  background-color: #ccccff;
+  width: 400px;
+  margin-top: 8rem;
+}
+
+#tweet-quote {
+  color: white;
+  text-decoration: none;
+}
+
+.imgs {
+  width: 20rem;
+  height: 20rem;
+  /*padding: 1rem;*/
+  margin: 1rem;
+}
+
+#rover-photos {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding: 0.5rem;
+}
+
+#homePage{
+  margin-top: 8rem;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5rem;
+  background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(255,255,255,1) 0%, rgba(0,212,255,1) 100%);
+}
+
+div p{
+  letter-spacing: 0.08rem;
+}
+
+div h1 {
+  font-family: "Tangerine", cursive;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
