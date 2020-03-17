@@ -1,3 +1,8 @@
+0:react hooks
+  --1:NASARover ✓
+  --2:QuoteMachine ? almost
+    --: make it update when the api response happens
+
 1:setup login page
   --1:create login div
   --2:make login functional
@@ -9,7 +14,7 @@
 3:test login page
 
 use creat react app ✓
+host on aws amplify ✓
 jest-enzyme library
 jwt auth
 heroku host app
-react hooks
