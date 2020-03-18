@@ -1,7 +1,6 @@
 0:react hooks
   --1:NASARover ✓
-  --2:QuoteMachine ? almost
-    --: make it update when the api response happens
+  --2:QuoteMachine ✓
 
 1:setup login page
   --1:create login div
