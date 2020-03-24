@@ -5,22 +5,17 @@ import quotes from './services/quotes'
 export const QuoteMachine = function () {
   const [tweets, setTweets] = useState([{
     //dummy objs before promise is returned so obj is not undefined on first render
-    'quote':'Searching...',
+    'quote':'',
     'author':''
   }])
   const [Quote, setQuote] = useState({
-    'quote':'',
+    'quote':'Searching...',
     'author':''
   })
 
-  function getRandomQuote() {
-    //set Quote to our randomly chosen quote from tweets
-    setQuote(tweets[Math.floor(Math.random() * tweets.length)]);
-  }
-
   function handleClick() {
     //when button is clicked get a random quote
-    getRandomQuote();
+    setQuote(tweets[Math.floor(Math.random() * tweets.length)]);
   }
 
   useEffect(() => {
@@ -32,8 +27,11 @@ export const QuoteMachine = function () {
     }
 
     getQuotes();
-    getRandomQuote();
   }, []);
+
+  useEffect(()=>{
+    setQuote(tweets[Math.floor(Math.random() * tweets.length)]);
+  }, [tweets])
 
   return (
 

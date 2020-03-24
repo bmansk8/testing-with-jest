@@ -17,4 +17,4 @@ use creat react app ✓
 host on aws amplify ✓
 jest-enzyme library
 jwt auth
-heroku host app
+heroku host app ✓
