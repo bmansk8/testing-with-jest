@@ -30,6 +30,7 @@ export const QuoteMachine = function () {
   }, []);
 
   useEffect(()=>{
+    //once tweets gets a response set quote
     setQuote(tweets[Math.floor(Math.random() * tweets.length)]);
   }, [tweets])
 
@@ -37,12 +38,12 @@ export const QuoteMachine = function () {
 
     <div>
       <div id='quote-box' className="mx-auto shadow-lg rounded p-3 mb-5">
-        <p id="text">{Quote.quote}</p>
+        <p id="quote">{Quote.quote}</p>
         <p id="author">{Quote.author}</p>
-        <button className="btn btn-primary ml-" id="new-quote" onClick={handleClick}>
+        <button className="btn btn-primary ml-3" id="new-quote" onClick={handleClick}>
           New quote?</button>
-        <button className="btn btn-primary ml-3">
-          <a id="tweet-quote" href="https://twitter.com/intent/tweet" rel="noopener noreferrer" target="_blank">Tweet me!</a>
+        <button id='tweet-button' className="btn btn-primary ml-3">
+          <a id="tweet-a" href="https://twitter.com/intent/tweet" rel="noopener noreferrer" target="_blank">Tweet me!</a>
         </button>
       </div>
     </div>

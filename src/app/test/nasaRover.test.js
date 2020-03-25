@@ -2,6 +2,7 @@ import { NASARover } from '../components/NASARover';
 import { shallow } from 'enzyme';
 import React from 'react';
 import "../../setupTest"
+import roverPhotos from '../components/services/roverPhotos';
 
 jest.mock("../components/services/roverPhotos")
 
@@ -18,9 +19,19 @@ it('renders imgs correctly', () => {
   expect(wrapper.find('img')).toExist();
   expect(wrapper.find('img')).toHaveProp('alt');
   expect(wrapper.find('img')).toHaveProp('src');
-
   expect(wrapper.find('img').first()).toHaveProp('src', 'searching...');
+})
 
-  //wrapper.update();
-  //expect(wrapper.find('img').first()).toHaveProp('src','123abc')
+
+it('roverphotos() is mocked and returning data', async () => {
+  await expect(roverPhotos()).resolves.toStrictEqual([
+    {
+      "img_src": '123abc',
+      "id": '0'
+    },
+    {
+      "img_src": 'abc123',
+      "id": '1'
+    }
+  ])
 })

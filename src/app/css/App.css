@@ -4,16 +4,9 @@
   margin-top: 8rem;
 }
 
-#tweet-quote {
+#tweet-a {
   color: white;
   text-decoration: none;
-}
-
-.imgs {
-  width: 20rem;
-  height: 20rem;
-  /*padding: 1rem;*/
-  margin: 1rem;
 }
 
 #rover-photos {
@@ -31,6 +24,13 @@
   margin-right: auto;
   padding: 1.5rem;
   background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(255,255,255,1) 0%, rgba(0,212,255,1) 100%);
+}
+
+.imgs {
+  width: 20rem;
+  height: 20rem;
+  /*padding: 1rem;*/
+  margin: 1rem;
 }
 
 div p{
