@@ -35,3 +35,14 @@ it('roverphotos() is mocked and returning data', async () => {
     }
   ])
 })
+
+it('renders imgs ater api call', done =>{
+  const wrapper = shallow(<NASARover />)
+  setTimeout(() =>{
+    wrapper.update();
+
+    expect(wrapper.find('img').length).toEqual(2);
+
+    done();
+  })
+})

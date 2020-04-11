@@ -1,7 +1,7 @@
 0:react hooks
   --1:NASARover ✓
-  --2:QuoteMachine ? almost
-    --: make it update when the api response happens
+  --2:QuoteMachine ✓
+    --: make it update when the api response happens ✓
 
 1:setup login page
   --1:create login div
@@ -9,12 +9,14 @@
     --1:maybe use library or custom code?
   --3:style login div
 
-2:test quote machine
+2:test quote machine ✓
 
 3:test login page
 
+4:more details page for each photo
+
 use creat react app ✓
 host on aws amplify ✓
-jest-enzyme library
+jest-enzyme library ✓
 jwt auth
 heroku host app ✓

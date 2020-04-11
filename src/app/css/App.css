@@ -9,12 +9,28 @@
   text-decoration: none;
 }
 
+
 #rover-photos {
   width: 75%;
   margin-left: auto;
   margin-right: auto;
   display: block;
   padding: 0.5rem;
+}
+
+#rover-photos .card img{
+  width:80%;
+  height:80%;
+}
+
+#rover-photos .card{
+  width: 25%;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-bottom: 1%;
+  display: inline-block;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 #homePage{
