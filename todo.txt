@@ -13,7 +13,11 @@
 
 3:test login page
 
-4:more details page for each photo
+4:nested details page for each photo ✓
+
+5:fix jest NASARover.test.js
+
+6:move details.jsx to separate file
 
 use creat react app ✓
 host on aws amplify ✓
