@@ -17,7 +17,7 @@
 
 5:fix jest NASARover.test.js
 
-6:move details.jsx to separate file
+6:move details.jsx to separate file ✓
 
 use creat react app ✓
 host on aws amplify ✓
