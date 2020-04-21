@@ -1,5 +1,5 @@
 import React from 'react'
-import {useParams, Link} from 'react-router-dom'
+import { useParams, Link } from 'react-router-dom'
 
 
 export const Details = function Detailed(passed) {
@@ -33,7 +33,7 @@ export const Details = function Detailed(passed) {
           return arr.rover.cameras[i].full_name;
         }
       }
-    }else{
+    } else {
       //return searching.. for first render till async promise is fulfilled
       return 'searching...'
     }
