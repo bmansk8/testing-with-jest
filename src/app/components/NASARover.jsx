@@ -58,7 +58,7 @@ export const NASARover = function NASARover() {
           </div>
         </Route>
         {/*then use /:photoId as my placeHolder */}
-        {/*i'm also passing in the data arr so ican use it in details*/}
+        {/*i'm also passing in the data arr so i can use it in details*/}
         <Route path={`${path}/:photoId`}>
           <Details data={data} />
         </Route>

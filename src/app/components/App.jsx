@@ -2,11 +2,14 @@ import React from "react";
 import { QuoteMachine } from "./QuoteMachine";
 import { NASARover } from "./NASARover";
 import { HomePage } from './HomePage';
+import {Login} from './Login';
+import {PrivateRoute} from './services/PrivateRoute'
+
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  Link,
 } from "react-router-dom";
 
 export const App = function App() {
@@ -28,9 +31,12 @@ export const App = function App() {
         </nav>
 
         <Switch>
-          <Route path="/quotes">
+          <PrivateRoute path="/quotes">
             <QuoteMachine />
             <NASARover />
+          </PrivateRoute>
+          <Route path="/login">
+            <Login />
           </Route>
           <Route path="/">
             <HomePage />
@@ -43,6 +49,4 @@ export const App = function App() {
 
   );
 }
-
-//
 

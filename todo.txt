@@ -3,11 +3,11 @@
   --2:QuoteMachine ✓
     --: make it update when the api response happens ✓
 
-1:setup login page
-  --1:create login div
-  --2:make login functional
-    --1:maybe use library or custom code?
-  --3:style login div
+1:setup login page 
+  --1:create login div ✓
+  --2:make login functional ✓ 
+    --1:use React Router Dom ✓
+  --3:style login div ✓
 
 2:test quote machine ✓
 
