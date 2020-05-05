@@ -3,18 +3,27 @@ import { shallow } from 'enzyme';
 import React from 'react';
 import "../../setupTest"
 import roverPhotos from '../components/services/roverPhotos';
+import { MemoryRouter } from 'react-router-dom';
 
 jest.mock("../components/services/roverPhotos")
 
 it("renders h1 correctly", () => {
-  const wrapper = shallow(<NASARover />);
+  const wrapper = shallow((
+    <MemoryRouter>
+      <NASARover />
+    </MemoryRouter>
+  ));
 
   expect(wrapper.find('#roverH1')).toExist();
   expect(wrapper.find('#roverH1')).toHaveClassName('text-center');
 });
 
 it('renders imgs correctly', () => {
-  const wrapper = shallow(<NASARover />);
+  const wrapper = shallow((
+    <MemoryRouter>
+      <NASARover />
+    </MemoryRouter>
+  ));
 
   expect(wrapper.find('img')).toExist();
   expect(wrapper.find('img')).toHaveProp('alt');
@@ -36,13 +45,19 @@ it('roverphotos() is mocked and returning data', async () => {
   ])
 })
 
-it('renders imgs ater api call', done =>{
-  const wrapper = shallow(<NASARover />)
-  setTimeout(() =>{
-    wrapper.update();
+it('renders imgs ater api call', () => {
+  const wrapper = shallow((
+    <MemoryRouter>
+      <NASARover />
+    </MemoryRouter>
+  ));
+  return new Promise(done => {
+    setTimeout(() => {
+      wrapper.update();
 
-    expect(wrapper.find('img').length).toEqual(2);
-
+      expect(wrapper.find('img').length).toEqual(2);
+    })
     done();
   })
+
 })
