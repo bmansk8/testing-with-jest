@@ -1,5 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+This is a simple quote machine. It pings a api for quotes and the nasa api for photos.
+
 ## See it Hosted on Heroku!
 
 https://reactquote-machine.herokuapp.com/
